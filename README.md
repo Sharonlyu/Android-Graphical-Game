@@ -2,12 +2,14 @@
 
 A welcome homepage at the start of this mobile app shows two buttons of game playing and game editing to guide users into two separate modes.
 Game editing:
+
 Major tasks:
 1) A page class with associated functions (including add, switch, rename and delete)
 2) A shape class with associated functions (include add, change property, copy, paste, delete,
 cut and set scripts)
 3) A database to save game which is to be used in player mode
 4) A custom view for displaying how the user interacts with features above responsively.
+
 Features supported:
 1) Game drop down menu:
 ● Clear Database: Once the menu item is clicked, all the records in the database are
@@ -21,6 +23,7 @@ appear. The saved json string of the game is shown on the email body, which can
 be changed by the user. The user can choose to enter the to/cc email address.
 Once the “send” button is clicked, the user will be redirected to Gmail to send the
 email. However, this function on the emulator might be delayed.
+
 2) Page drop down menu:
 ● Create a new page: through a popup window, the editor will first see a editorText
 with a default generated name such as “Page2”. The editor can type in the new
@@ -34,10 +37,12 @@ delete the first page”.
 ● Rename page: The editor can type in the page name they want for the current
 page in a popup window. Similarly, the name must be one word with no space,
 and must not be the same as the name of other pages.
+
 ● Switch page: A popup window will be shown. All pages will be listed and labeled
 with a number greater than 1. The editor can simply type in the number of the
 page they want to go to and click confirm. If the input number is not the label of
 any page. A toast "Page doesn't exist!" will be shown to the user:
+
 3) Shape drop down menu:
 ● Add shape: through a dialog window with all shape options listed. When selecting
 the shape, it can be moved and resized with blue outline highlighted.
@@ -45,6 +50,7 @@ the shape, it can be moved and resized with blue outline highlighted.
 visibility and display scripts.
 ● Change text: set text and font size only for text (not image)
 ● Delete/copy/paste/cut shapes
+
 4) Script drop down:
 ● Show script: A popup window will present the current script of the selected shape.
 The editor needs to click the ok button to close the popup window. Note that if no
@@ -55,11 +61,13 @@ features. If goto is selected, a popup window will be shown with all pages liste
 The editor needs to type in the page label number that they want to go to. If play
 is selected, a popup window will be shown with all sound names listed as radio
 buttons. If hide/show is selected, all shapes in all pages will be listed and labeled
-with numbers. Type in the number of the shape you want to hide/show. ● On enter: On enter will have a submenu with “play”, “hide” and “show” features.
+with numbers. Type in the number of the shape you want to hide/show. 
+● On enter: On enter will have a submenu with “play”, “hide” and “show” features.
 The editor needs to type in the page label number that they want to go to. If play
 is selected, a popup window will be shown with all sound names listed as radio
 buttons. If hide/show is selected, all shapes in all pages will be listed and labeled
-with numbers. Type in the number of the shape you want to hide/show. ● On drop: On drop will have a submenu with “goto”, “play”, “hide” and “show”
+with numbers. Type in the number of the shape you want to hide/show. 
+● On drop: On drop will have a submenu with “goto”, “play”, “hide” and “show”
 features. After either one of these four actions is clicked, a popup window will be
 shown with all the shapes in all pages that will be chosen the onDrop shape. Then,
 if goto is selected, a popup window will be shown with all pages listed. The editor
@@ -74,6 +82,7 @@ the database by clicking the “confirm” button. The game will also be saved a
 in the local directory, the information of which is shown in a Toast. The game name is
 displayed as a TextView on the left lower corner of the screen. All the changes will be
 updated in the database.
+
 Extension of the game editor:
 1) Error checking:
 ● Make sure the user selects the legal shape and page name and cannot select a
@@ -90,6 +99,8 @@ game is also saved in the local directory, which can be accessed using a file ex
 5) Users can also import the game Json string, which will be saved in the database and
 parsed in the player side
 6) Toast messages for all success but not visible result and failure operation.
+
+
 Game playing:
 Major tasks:
 1) A welcome page and a main menu popup window to choose whether the user wants to

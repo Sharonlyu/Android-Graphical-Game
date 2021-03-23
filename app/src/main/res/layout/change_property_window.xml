@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bunny2_background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/geo"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Geometry"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/geo"
+        android:id="@+id/setXY"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@color/black"
+            android:text="X:"/>
+
+        <EditText
+            android:id="@+id/editX"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_weight="4.8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@color/black"
+            android:text="Y:"/>
+
+        <EditText
+            android:id="@+id/editY"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_weight="4.8"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setXY"
+        android:id="@+id/setWH"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@color/black"
+            android:text="Width:"/>
+
+        <EditText
+            android:id="@+id/editWidth"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_weight="2.2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@color/black"
+            android:text="Height:"/>
+
+        <EditText
+            android:id="@+id/editHeight"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_weight="2.2"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setWH"
+        android:id="@+id/changeName"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setWH"
+            android:text="Name of the shape: "
+            android:textColor="@color/black"
+            android:layout_weight="5"
+            android:layout_toLeftOf="@id/editName"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:backgroundTint="@android:color/holo_red_light" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeName"
+        android:id="@+id/showScript"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setWH"
+            android:textColor="@color/black"
+            android:text="Script of this shape: "
+            android:layout_weight="4"
+            android:layout_toLeftOf="@id/shapeScript"/>
+
+        <TextView
+            android:id="@+id/shapeScript"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showScript"
+        android:id="@+id/checkboxes"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_toLeftOf="@id/visableCheck"
+            android:layout_weight="5"
+            android:id="@+id/moveCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Movable"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/visableCheck"
+            android:layout_weight="5"
+            android:layout_below="@id/moveCheck"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Visable"
+            android:checked="true"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxes"
+        android:id="@+id/buttons"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="40dp"
+
+            android:id="@+id/apply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply" />
+
+        <Button
+
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

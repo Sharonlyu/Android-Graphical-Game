@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <cs108.stanford.edu.bunnyworld.EditorView
+        android:id="@+id/editorView"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="280dp"
+        />
+
+    <View
+        android:id="@+id/blackLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/displayedGameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:hint="Bunny World"/>
+
+
+        <TextView
+            android:id="@+id/displayedPageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/displayedGameName"
+            android:gravity="center"
+            android:text="Page1"
+            android:textSize="20dp" />
+
+<!--        <Button-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/clearDB"-->
+<!--            android:text="Clear Database"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_toLeftOf="@id/importGame"-->
+<!--            android:onClick="onClear"-->
+<!--            >-->
+<!--        </Button>-->
+
+
+<!--        <Button-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/importGame"-->
+<!--            android:text="Import"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_toLeftOf="@id/saveGame"-->
+<!--            android:onClick="onImport"-->
+<!--            >-->
+<!--        </Button>-->
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveGame"
+            android:text="Save"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:onClick="onSave"
+            >
+        </Button>
+
+<!--        <Button-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/exportGame"-->
+<!--            android:text="EXPORT"-->
+<!--            android:onClick="onExport"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            >-->
+<!--        </Button>-->
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

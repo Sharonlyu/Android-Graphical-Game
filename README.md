@@ -1,5 +1,6 @@
 # Android-Graphical-Game
 
+An Android graphical adventure game which allows players to design, play, save progress and reload
 A welcome homepage at the start of this mobile app shows two buttons of game playing and game editing to guide users into two separate modes.
 Game editing:
 
